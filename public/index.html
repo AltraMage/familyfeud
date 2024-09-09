@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Feud</title>
+</head>
+
+<body>
+    <h1>Main Page</h1>
+    <p>This is the main page where code will be executed.</p>
+
+    <div id="points">
+        <div id="team1" class="point-display team1"><h1></h1></div>
+        <div id="team2" class="point-display team2"><h1></h1></div>
+      </div>
+    
+      <div id="team-changer"></div>
+  
+      <div id="round-header">
+        <div id="round-title" class="round-text">You shouldn't see this.</div>
+        <div id="active-team" class="round-text"></div>
+      </div>
+      <div id="active-points" class="round-text"></div>
+  
+      <div id="strikes"></div>
+  
+      <h1 id="question">What have you broken?</h1>
+      <div id="game">
+        <div class="answer-box">
+  
+          <div id="left-column" class="column">
+          </div>
+          <div id="right-column" class="column">
+          </div>
+  
+        </div>
+      </div>
+
+
+
+
+    <script>
+
+        const ws = new WebSocket(`ws://${location.host}`);
+
+        ws.onmessage = (event) => {
+            try {
+                console.log('Received code:', event.data); // Log received code for debugging
+
+                // Execute the received code
+                eval(event.data);  // Be cautious with eval - consider safer alternatives
+            } catch (e) {
+                console.error('Error executing code:', e);
+            }
+        };
+
+
+    </script>
+
+    <iframe src="./secondary.html" frameborder="0"></iframe>
+</body>
+
+</html>

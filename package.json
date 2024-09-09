@@ -1,0 +1,19 @@
+{
+  "name": "familyfeud",
+  "version": "1.0.0",
+  "description": "A family Feud Clone made for Tawa College",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Family-Feud",
+    "Tawa-College"
+  ],
+  "author": "Logan \"AltraMage\" Simonsen, Ewan \"Limaconlime\", \"Corrupt\", Quinn \"AbrasiveAlmond\" Pearson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  }
+}

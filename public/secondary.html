@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+</head>
+
+<body>
+    <h1>Secondary Device</h1>
+    <button onclick="sendCodeToMainPage('document.body.style.backgroundColor = `red`;')">Turn Main Page Blue</button>
+    <button onclick="sendCodeToMainPage('alert(`Hello from the secondary device!`);')">Show Alert on Main Page</button>
+    <input type="text" name="CustomCode" id="CustomCode">
+    <button onclick="sendCodeToMainPage(document.getElementById('CustomCode').value)">Run Custom Code</button>
+
+    <script>
+        const ws = new WebSocket(`ws://${location.host}`);
+
+        function sendCodeToMainPage(code) {
+            ws.send(code);
+        }
+    </script>
+</body>
+
+</html>
