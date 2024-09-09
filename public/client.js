@@ -28,7 +28,7 @@ Strike tracker
     Or active team?
 Worth noting that the other organisers don't seem to know exactly how to play either
 */
-
+const JSON_DATA_FILE = "./media/data.json"
 
 function start() {
     // const inputJson = JSON.parse(json);
@@ -366,15 +366,12 @@ class Quiz {
     }
 };
 
-// CORS policy prevents accessing the JSON file without running a server
-// Error: "index.html:1  Access to fetch at 'file://wsl%24/Ubuntu-20.04/home/ewan/git/tc-feud/awesome.json' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, isolated-app, chrome-extension, chrome-untrusted, https, edge."
-// So this will be easier for developing
-
-
+// CORS / JS work around for getting json file.
+// N.b. all calls should use await
 async function fetchData() {
-    let data; // Variable to hold the fetched data
+    let data;
     try {
-        const response = await fetch('./media/data.json');
+        const response = await fetch(JSON_DATA_FILE);
         data = await response.json();
         console.log('Data inside fetchData:', data);
         return data
@@ -410,7 +407,8 @@ function pointText(team) {
     return `${team.name}: ${team.points} points`
 }
 
-const manual_points_html = `<form id="manual-points" method="get">
+const manual_points_html =
+    `<form id="manual-points" method="get">
   <label for="field">Add points to the active team</label>
   <input type="number" id="text-field" name="field">
   <input type="submit" value="Add">
