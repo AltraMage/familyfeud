@@ -1,7 +1,7 @@
 # TC FEUD!
-Open Source family fued clone made for Tawa College
+Open Source family fued clone made for [Tawa College](https://www.tawacollege.school.nz/ "Not affilated.")
 
-## Setup - Have node.js installed
+## Setup - Have [node.js](https://nodejs.org/en/download/package-manager "Download Nodejs here") installed
 - Clone the repo ```git clone https://github.com/AltraMage/familyfeud.git```
 - Navigate to the repo```cd familyfeud```
 - Install the packages```npm install```
@@ -19,7 +19,7 @@ Console url is ```yourIP:3000/console.html```
 - [ ] Electron App? (Perhaps)
 - [ ] Sound Fx's
 
-###### Copyrights
-Family Feud is an IP of its respective owner  
-Code (c) Ewan + Quinn circa 2023  
+### Copyrights
+Family Feud is an IP of American Broardcasting Company (ABC)  
+Code (c) Ewan + Quinn circa 2023; [Original Code](https://github.com/Limaconlime/limaconlime.github.io/tree/master/tc-feud)  
 Websocket port (c) Logan Simonsen 2024
