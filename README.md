@@ -17,6 +17,7 @@ Console url is ```yourIP:3000/console.html```
 - [ ] Custom Theme / Images
 - [ ] Weighted Scores
 - [ ] Electron App? (Perhaps)
+- [ ] Sound Fx's
 
 ###### Copyrights
 Family Feud is an IP of its respective owner  
