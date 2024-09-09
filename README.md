@@ -12,8 +12,10 @@ Console url is ```yourIP:3000/console.html```
 
 # Todo:
 - [ ] Have all interactions from control panel
+- [ ] Clear and user friendly design
 - [ ] Custom JSON importing
 - [ ] Custom Theme / Images
+- [ ] Weighted Scores
 - [ ] Electron App? (Perhaps)
 
 ###### Copyrights
