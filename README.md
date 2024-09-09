@@ -1,5 +1,5 @@
 # TC FEUD!
-Open Source family fued clone made for [Tawa College](https://www.tawacollege.school.nz/ "Not affilated.")
+Open Source family feud clone made for [Tawa College](https://www.tawacollege.school.nz/ "Not affilated.")
 
 ## Setup - Have [node.js](https://nodejs.org/en/download/package-manager "Download Nodejs here") installed
 - Clone the repo ```git clone https://github.com/AltraMage/familyfeud.git``` or [Download](https://github.com/AltraMage/familyfeud/archive/refs/heads/main.zip)
