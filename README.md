@@ -2,8 +2,8 @@
 Open Source family fued clone made for [Tawa College](https://www.tawacollege.school.nz/ "Not affilated.")
 
 ## Setup - Have [node.js](https://nodejs.org/en/download/package-manager "Download Nodejs here") installed
-- Clone the repo ```git clone https://github.com/AltraMage/familyfeud.git```
-- Navigate to the repo```cd familyfeud```
+- Clone the repo ```git clone https://github.com/AltraMage/familyfeud.git``` or [Download](https://github.com/AltraMage/familyfeud/archive/refs/heads/main.zip "Here")
+- Navigate to the repo```cd ./familyfeud```
 - Install the packages```npm install```
 - Run the server ```node server.js```
 
