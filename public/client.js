@@ -507,3 +507,5 @@ function start() {
   <input type="number" id="text-field" name="field">
   <input type="submit" value="Add">
   </form>`
+
+start()
