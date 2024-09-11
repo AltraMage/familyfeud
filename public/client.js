@@ -35,7 +35,7 @@ function start() {
     // let quiz = new Quiz(inputJson.rounds);
   
     addEventListener('keydown', (event) => {
-      // console.log(event.key);
+      console.log(event.key);
       if (event.key === " ") { event.preventDefault(); updatePage(); } 
       else if (event.key == "t") {
         event.preventDefault();
@@ -62,12 +62,17 @@ function start() {
         drawStrikes();
       }
   
+      // Wholy crap ewan less lines != less better. This is a mess
+
+      // Check to see if the the key is a number
       else if (event.key >= 0 && event.key <= 9) {
+        // If key between 1 and 9, reveal the answer at that index
         const answer = (event.key >= 1 && event.key <= 9) ? quiz.currentRound().answers[event.key - 1] : quiz.currentRound().answers[9];
         const index = event.key > 0? event.key - 1:9;
         answer.revealed = !answer.revealed; // Confusing but fewer lines so yay
         if (answer.revealed) { // Now equivalent to !answer.revealed
           quiz.addPoints(answer.value)
+          // Manipulate the DOM to reveal the answer
           revealAnswer(index < 5? document.getElementById("left-column").children[index]:document.getElementById("right-column").children[index - 5]);
         } else {
           quiz.addPoints(-answer.value)
