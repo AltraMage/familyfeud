@@ -1,4 +1,4 @@
-{
+const data = {
     "rounds": [
         {
             "name": "Round 1",
@@ -278,3 +278,5 @@
         }
     ]
 }
+
+export default data;
