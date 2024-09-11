@@ -20,14 +20,7 @@
         <button class="answer3">Reveal 3</button>
         <button class="answer4"></button><button class="answer5"></button><button class="answer6"></button><button class="answer7"></button><button class="answer8"></button><button class="answer9"></button><button class="answer10"></button>
     </div>
-
-    <script>
-        const ws = new WebSocket(`ws://${location.host}`);
-
-        function sendCodeToMainPage(code) {
-            ws.send(code);
-        }
-    </script>
+    <script src="codesend.js"></script>
 </body>
 
 </html>
